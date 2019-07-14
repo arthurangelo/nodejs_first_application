@@ -10,6 +10,19 @@ const index = require('./routes/index');
 
 const cliente = require('./routes/cliente');
 
+const bodyParser = require('body-parser');
+
+const cors = require('cors');
+
+app.use(cors({
+  origin: ['http://localhost:4200'],
+  methods: ["GET","POST","PUT","DELETE"],
+  allowedHeaders: ["Content-Type","Authorization"]
+}));
+
+
+app.use(bodyParser.json());
+
 app.set("json spaces",4);
 
 app.use('/',index);

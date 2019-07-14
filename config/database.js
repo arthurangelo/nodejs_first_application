@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-let sequelize = new Sequelize('pds2', 'root', '', {
+let sequelize = new Sequelize('pds2', 'root', 'password', {
     host: 'localhost',
     dialect: 'mysql',
     pool: {
