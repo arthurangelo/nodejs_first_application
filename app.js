@@ -31,5 +31,5 @@ app.use('/cliente',cliente);
 
 app.listen(port,()=>console.log("positivo e operante na porta: " + port));
 
-db.authenticate().then(() => console.log('Database subiu motherfucker!')).catch(err => console.log('Error T.T :' + err));
+db.authenticate().then(() => console.log('Database subiu!')).catch(err => console.log('Error T.T :' + err));
 
